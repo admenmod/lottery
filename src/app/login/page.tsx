@@ -1,11 +1,11 @@
-import styles from './page.module.css'
+import styles from '../page.module.css'
 
 
-export default function IndexPage() {
+export default function Page() {
 	return <main className={styles.main}>
 		<div className={styles.description}>
 			<p>
-				index page
+				login page
 			</p>
 		</div>
 	</main>

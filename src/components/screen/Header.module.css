@@ -1,0 +1,7 @@
+.header {
+	padding: 2rem;
+}
+
+.header > a {
+	padding: 1rem;
+}
