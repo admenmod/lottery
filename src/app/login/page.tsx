@@ -1,12 +1,8 @@
-import styles from '../page.module.css'
+import { Login } from '@/components/Login';
 
 
-export default function Page() {
-	return <main className={styles.main}>
-		<div className={styles.description}>
-			<p>
-				login page
-			</p>
-		</div>
-	</main>
+export default function LoginPage() {
+	return <>
+		<Login />
+	</>
 }

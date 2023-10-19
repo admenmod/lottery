@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
-import { Header } from '@/components/screen/Header'
+import { ReduxProvider } from '@/components/Provider';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,9 +15,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return <html lang="ru">
 		<body className={inter.className}>
-			<Header />
+			{/* <script async src='/.eruda.js'/> */}
+			{/* <script>eruda.init();</script> */}
 
-			{children}
+			<ReduxProvider>
+				{children}
+			</ReduxProvider>
 		</body>
 	</html>
 }

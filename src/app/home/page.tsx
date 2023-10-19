@@ -1,15 +1,18 @@
 import { Header } from '@/components/screen/Header'
+import { UserCard } from '@/components/screen/UserCard';
 
-import styles from './page.module.css'
+import styles from '@/app/page.module.css'
 
 
-export default function IndexPage() {
+export default function HomePage() {
 	return <>
 		<Header />
 		<main className={styles.main}>
+			<UserCard />
+
 			<div className={styles.description}>
 				<p>
-					index page
+					home page
 				</p>
 			</div>
 		</main>
